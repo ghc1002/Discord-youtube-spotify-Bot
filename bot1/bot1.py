@@ -34,7 +34,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if __name__ == '__main__':
-        username = "dragonicdeath54"
+        username = "your spotify username"
         token = util.prompt_for_user_token(username,scope = 'streaming user-read-currently-playing',client_id='spotipy client id',client_secret='spotipy client secret',redirect_uri='http://google.com/callback/')
         if token:
            sp = spotipy.Spotify(auth=token)
